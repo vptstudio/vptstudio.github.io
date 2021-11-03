@@ -1,0 +1,124 @@
+@charset "utf-8";
+/* CSS Document */
+*{	
+	margin: 0;
+	padding:0; 
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'Work Sans', sans-serif;		
+}
+.body{
+	margin: 0;
+	padding: 0;
+	width: 100vh;
+	position: absolute;
+	background-color: black;
+	overflow: hidden;
+}
+
+.nav a:link {
+	color:#ffffff;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav a:visited {
+	color:#ffffff;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav a:hover {
+	color:#48fe00;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav a:active {
+	color:#48fe00;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav{
+	background-color: black;
+	height: 80px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+	position: fixed; 
+	top: 0px; 
+	left: 0; 
+	z-index: 100000;
+}
+.nav img{
+	float: left;
+	padding-left: 15%;
+	padding-top: 8px;
+	width: 120px;	
+}
+.nav ul{
+	float: right;
+	padding-top: 30px;
+	padding-right: 15%;
+	}
+.nav ul li{
+	color: black;
+	display: inline;
+	font-size: 18px;
+	padding: 0 25px;	
+	}
+.logo{
+	padding-left: 40px;
+}
+#container{
+	width: 100%;
+	height: 100%;
+	background-color: #2BAC35;
+	overflow-y: scroll;
+	scroll-behavior: smooth;	
+}
+.noidung{
+	width: 100%;
+	height: 100vh;
+	background-color: aliceblue; 
+	font-size: 35pt;
+	color: black;
+	padding-left: 150px;
+	
+}
+.menu_doc{
+	width: 5%;
+	height: 900px;
+	background-color: none;
+	position: fixed;
+	box-sizing: border-box;
+	padding: 20px;
+	
+}
+/*Button doc*/
+.btn{
+	border: none;
+	outline: none;
+	margin: 15px 0;
+	padding: 5px 10px;
+	background-color: #f1f1f1;
+	cursor: pointer;
+	font-size: 15px;
+	border-radius: 40px;
+	
+}
+.active, .btn:hover {
+  background-color: #414040;
+  color: white;
+}
+.canle{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 0px;
+}
+.footer{
+	text-align: center;
+	padding-top: 15px;
+	height: 30px;
+	color: white;
+	background-color: #515355
+}

@@ -1,0 +1,387 @@
+@charset "utf-8";
+/* CSS Document */
+*{	
+	margin: 0;
+	padding:0; 
+	font-family: 'Bebas Neue', cursive;
+	font-family: 'Cabin Condensed', sans-serif;
+	font-family: 'Work Sans', sans-serif;	
+	
+}
+
+
+.nav a:link {
+	color:#ffffff;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav a:visited {
+	color:#ffffff;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav a:hover {
+	color:#48fe00;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav a:active {
+	color:#48fe00;
+	background-color:transparent;
+	text-decoration:none;
+}
+.nav{
+	background-color: black;
+	height: 80px;
+	width: 100%;
+	box-sizing: border-box;
+	box-shadow: 0px 2px 2px rgba(0,0,0,0.5); /*Đổ bóng cho menu*/
+	position: fixed; 
+	top: 0px; 
+	left: 0; 
+	z-index: 100000;
+}
+.nav img{
+	float: left;
+	padding-left: 15%;
+	padding-top: 8px;
+	width: 120px;	
+}
+.nav ul{
+	float: right;
+	padding-top: 30px;
+	padding-right: 15%;
+	}
+.nav ul li{
+	color: black;
+	display: inline;
+	font-size: 18px;
+	padding: 0 25px;	
+	}
+.logo{
+	padding-left: 40px;
+}
+.banner{
+	height: 100vh;
+	box-sizing: border-box;
+	background-image: url("../aboutus/banner-aboutus1.jpg");
+	background-size: cover;
+	background-position: center;	
+}
+.banner-text{
+	margin: 0 auto;
+	padding-top: 20%;
+	padding-left: 15%;
+	font-size: 65px;
+	color: #029C00;
+}
+.banner-content{
+	margin: 0 auto;
+	width: 35%;
+	float: left;
+	padding-top: 20px;
+	padding-left: 15%;
+	font-size: 18px;
+	color: #333333;
+}
+
+
+.VPTstaff{	
+	width: 100%;	
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.VPTstaff-grid{
+	padding: 10px;	
+}
+.container{
+	position: relative;
+	width: 370px;
+	height: auto;	
+}
+
+.image{ 
+  width: 370px;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 370px;
+  width: 370px;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #3BFE00;
+	
+}
+
+.container:hover .overlay {
+  opacity: .5;
+}
+
+.text{
+  color: #2D2D2E;
+  font-size: 25px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.doi-ngu{	
+	text-align: center;
+	
+	
+}
+.doi-ngu h3{
+	font-size: 55px;
+	padding-top: 130px;
+	padding-bottom: 20px;
+}
+.canle{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 15%;
+	padding-right: 15%;
+	padding-top: 0px;
+}
+/*zoom*/
+.zoom {  transition: transform .3s;  
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.05); /* IE 9 */
+  -webkit-transform: scale(1.05); /* Safari 3-8 */
+  transform: scale(1.05); 
+}
+.footer-logo{
+	width: 100%;
+	text-align: center;
+	padding-top: 30px;
+}
+.footer-info{		
+	text-align: center;
+	
+}
+.footer-info h3{
+	font-size: 20px;
+	color: #ffffff;
+	padding: 5px;
+}
+.footer-info p{
+	padding-top: 2px;
+}
+.social-icon{
+	
+	text-align: center;
+}
+.social-icon img{
+	width: 25px;	
+	padding: 20px;
+}
+.icon a:link {
+	color:#ffffff;
+	background-color:transparent;
+	text-decoration:none;
+}
+.icon a:visited {
+	color:#ffffff;
+	background-color:transparent;
+	text-decoration:none;
+}
+.icon a:hover {
+	color:#48fe00;
+	background-color:transparent;
+	text-decoration:none;
+}
+.icon a:active {
+	color:#48fe00;
+	background-color:transparent;
+	text-decoration:none;
+}
+
+
+.footer{	
+	padding-top: 15px;
+	padding: 0 25%;
+	margin: 0 auto;
+	height: 300px;
+	color: white;
+	background-color: #0A0A0A;
+}
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #42C116;
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top img {
+    
+    margin: 0;
+    position: relative;
+    left: 12.5px;
+    top: 11px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: #46C819;
+}
+#return-to-top:hover img {
+    color: #fff;
+    top: 5px;
+}
+.canle{
+	display: flex;
+	flex-wrap: wrap;
+	padding-left: 5px;
+	padding-right: 5px;
+	padding-top: 0px;
+}
+.myskill{
+	font-size: 65px;
+	color: #1D9400;
+	text-align: center;
+}
+.section40{
+	height: 100vh;
+	
+}
+.sec3-text{
+	color: #0D0C0C;
+}
+.section40 h4{
+	font-size: 65px;
+	color: #20d60d;
+	
+}
+.sec4-header{
+	padding-top: 8%;
+	display: block;
+	margin: auto;
+}
+.job-profile{
+	display: flex;
+	margin: 0 auto auto auto;
+	
+}
+
+.box4{
+	width: 150px;
+	height: 200px;
+	border-radius: 15px;
+	padding: 10px;
+	scroll-snap-align: start;
+}
+.box4-1{
+	background-color: #f26222;
+	background-image: url("../image/section2/1.jpg");
+	background-size: cover;	
+	width: 150px;
+	height: 200px;
+}
+
+.box4-2{
+	background-color: #f26222;
+	background-image: url("../image/section2/2.jpg");
+	background-size: cover;	
+	width: 150px;
+	height: 200px;
+}
+.box4-3{
+	background-color: #f26222;
+	background-image: url("../image/section2/3.jpg");
+	background-size: cover;	
+	width: 150px;
+	height: 200px;
+}
+.box4-4{
+	background-color: #f26222;
+	background-image: url("../image/section2/4.jpg");
+	background-size: cover;	
+	width: 150px;
+	height: 200px;
+}
+.box4-5{
+	background-color: #f26222;
+	background-image: url("../image/section2/5.jpg");
+	background-size: cover;	
+	width: 150px;
+	height: 200px;
+}
+.box4-6{
+	background-color: #f26222;
+	background-image: url("../image/section2/6.jpg");
+	background-size: cover;	
+	width: 150px;
+	height: 200px;
+}
+.sec4-header p{
+	padding-top: 10px;
+	font-size: 20px;
+}
+
+.Creatory, .Optimus, .VPT, .SGD, .FL{
+	padding: 0 30px 0 0;
+}
+.sec4-text{
+	font-size: 20px;
+	color:#ffffff;
+	padding-top: 135px;
+}
+.text1{
+	color: #ffffff;
+	font-size: 13px;
+}
+.Creatory:hover{
+	transform: scale(1.05);
+	transition: all .2s ease;
+	
+}
+.SGD:hover{
+	transform: scale(1.05);
+	transition: all .2s ease;
+}
+.Optimus:hover{
+	transform: scale(1.05);
+	transition: all .2s ease;
+}
+.FL:hover{
+	transform: scale(1.05);
+	transition: all .2s ease;
+}
+.VPT:hover{
+	transform: scale(1.05);
+	transition: all .2s ease;
+}
+.IU:hover{
+	transform: scale(1.05);
+	transition: all .2s ease;
+}
+
+
