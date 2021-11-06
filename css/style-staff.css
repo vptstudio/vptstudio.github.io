@@ -61,6 +61,14 @@
 .logo{
 	padding-left: 40px;
 }
+.banner{
+	height: 100vh;
+	box-sizing: border-box;
+	background-image: url("../aboutus/banner-aboutus1.jpg");
+	background-size: cover;
+	background-position: center;	
+}
+
 .VPTstaff{	
 	width: 100%;	
 	display: flex;

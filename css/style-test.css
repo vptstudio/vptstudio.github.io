@@ -12,44 +12,35 @@ html, body{
 }
 #container{
 	width: 100%;
-	height: 100vh;
-	overflow-y: scroll;
-	scroll-behavior: smooth;
+	
 	
 }
-#section1 {
-	height: 100vh;
-	background-image: url("../banner-2.jpg");
-	background-size: cover;
-	background-position: center;
-	padding: 130px;
-	box-sizing: border-box;	
+/*section1-slide*/
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
-.s1-text{
-	color: white;
-	font-size: 50pt;
-	margin: auto 0;
-	padding: 30px 0;
+.carousel-caption {
+  bottom: 270px;
 }
-.scroll-page a:link {
-	color:#ffffff;
-	background-color:transparent;
-	text-decoration:none;
+
+.carousel-caption h5 {
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: 25px;
 }
-.scroll-page a:visited {
-	color:#ffffff;
-	background-color:transparent;
-	text-decoration:none;
-}
-.scroll-page a:hover {
-	color:#48fe00;
-	background-color:transparent;
-	text-decoration:none;
-}
-.scroll-page a:active {
-	color:#48fe00;
-	background-color:transparent;
-	text-decoration:none;
+
+.carousel-caption p {
+  width: 75%;
+  margin: auto;
+  font-size: 18px;
+  line-height: 1.9;
 }
 
 #section2 {
@@ -62,8 +53,8 @@ html, body{
 .canle{
 	display: flex;
 	flex-wrap: wrap;
-	padding-left: 5px;
-	padding-right: 5px;
+	padding-left: 8%;
+	padding-right: 8%;
 	padding-top: 0px;
 }
 .myskill{
@@ -155,7 +146,7 @@ html, body{
 .sec4-text{
 	font-size: 20px;
 	color:#ffffff;
-	padding-top: 135px;
+	padding-top: 100px;
 }
 .text1{
 	color: #ffffff;
@@ -191,39 +182,8 @@ html, body{
 	background-position: center;
 	height: 200px;
 }
-.footer-logo{
-	width: 100%;
-	text-align: center;
-	padding-top: 30px;
-}
-.footer-info{		
-	text-align: center;
-	
-}
-.footer-info h3{
-	font-size: 20px;
-	color: #ffffff;
-	padding: 5px;
-}
-.footer-info p{
-	padding-top: 2px;
-}
-.social-icon{
-	
-	text-align: center;
-}
-.social-icon img{
-	width: 25px;	
-	padding: 20px;
-}
 .footer{
-	
-	padding-top: 15px;
-	padding: 0 25%;
-	margin: 0 auto;
-	height: 380px;
-	color: white;
-	background-color: #0A0A0A;
+	padding-top: 40px;
 }
 
 .noidung{
@@ -243,90 +203,14 @@ html, body{
 	padding: 15px;
 	box-sizing: border-box;
 }
-/*button doc*/
-#main ul{
-	text-align: center;
-	padding-top: 80%;
-	
-	
-	}
-#main ul li{
-	color: black;
-	display: flex;
-    align-items: center;
-	font-size: 50px;
-	padding: 10px 0;	
-	}
-#main a:link {
-	color:#ffffff;
-	background-color:transparent;
-	text-decoration:none;
-}
-#main a:visited {
-	color:#ffffff;
-	background-color:transparent;
-	text-decoration:none;
-}
-#main a:hover {
-	color:#48fe00;
-	background-color:transparent;
-	text-decoration:none;
-}
-#main a:active {
-	color:#48fe00;
-	background-color:transparent;
-	text-decoration:none;
-}
-
-/*menu doc*/
-.sidenav {
-	height: 100%;
-	width: 0;
-	position: fixed;
-	z-index: 2;
-	top: 0;
-	left: 0;
-	background:rgba(0,0,0,0.5);
-	overflow-x: hidden;
-	transition: 0.5s;
-	padding-top: 60px;
-
-}
-
-.sidenav a {
-	padding: 8px 8px 8px 35px;
-	text-decoration: none;
-	font-size: 20px;
-	color: #818181;
-	display: block;
-	transition: 0.3s;
-	color: #f1f1f1;	
-	font-family: 'Bebas Neue', cursive;
-	font-family: 'Cabin Condensed', sans-serif;
-	font-family: 'Work Sans', sans-serif;
-	
-}
-
-.sidenav a:hover {
-	color: #26fd00;	
-}
-
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
-}
-.sidenav img{
-	padding: 10px;
-}
+/*Về VPT*/
 #section3 {
-	height: 100vh;
+	height: 800px;
     background-image: linear-gradient(#2f2f30, #454645);
-	padding: 180px 130px ;
+	
 	box-sizing: border-box;
 	margin: 0 auto;
+	
 	
 }
 #section3 .founder{
@@ -340,6 +224,7 @@ html, body{
 .header{
 	color: #6bfe00;
 	font-size: 45px;
+	padding-top: 20%;
 }
 #section3 .aboutus{
 	float: right;
@@ -351,26 +236,27 @@ html, body{
 }
 .VPT-section3{
 	margin: 0 auto;
+	position: relative;
 }
 #section4{
-	height: 100vh;	
-	padding: 130px;
+	height: 1050px;	
+	padding: 5%;
 	box-sizing: border-box;
 	background-color: #252424;
 }
 .sec4-header{
-	width: 35%;
-	float: left;
-	display: inline;
+	width: 100%;	
+	text-align: center;
 	align-items: center;
 	justify-content: center;
 }
+
 .sec4-header h3{
 	color: #6bfe00;
-	font-size: 50px;
+	font-size: 45px;
 }
 .VPTstaff{	
-	width: 65%;
+	width: 100%;
 	float: right;
 	display: flex;
 	align-items: center;
@@ -453,7 +339,7 @@ html, body{
 }
 /*section5-form*/
 #section5{
-	height: 100vh;
+	height: 900px;
 	padding: 130px;
 	box-sizing: border-box;
 	background-image: url("../aboutus/banner-aboutus1.jpg");
@@ -462,7 +348,7 @@ html, body{
 }
 .sec5header{
 	width: 50%;
-	padding-left: 20%;
+	padding-left: 50%;
 	display: inline;	
 	
 }
@@ -471,59 +357,8 @@ html, body{
 }
 
 
-/*button doc*/
-.btn {
-	border: none;
-	outline: none;
-	padding: 5px 10px;
-	margin: 20px 20px 0 20px;
-	background-color: #f1f1f1;
-	cursor: pointer;
-	font-size: 16px;
-	border-radius: 40px;
-}
-.active, .btn:hover {
-  background-color: #666;
-  color: white;
-}
-/*back to top*/
-#button {
-  display: inline-block;
-  background-color: #FF9800;
-  width: 50px;
-  height: 50px;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-#button::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-#button:hover {
-  cursor: pointer;
-  background-color: #333;
-}
-#button:active {
-  background-color: #555;
-}
-#button.show {
-  opacity: 1;
-  visibility: visible;
-}
 
+/* Styles for the content section */
 /* Styles for the content section */
 
 .content {
@@ -586,3 +421,4 @@ html, body{
 	color: #000000;
 	border: 2px solid #565656;
 }
+
